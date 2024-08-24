@@ -19,8 +19,7 @@ the notion API: https://github.com/ramnes/notion-sdk-py . The database
     https://developers.notion.com/docs/create-a-notion-integration#getting-started 
     https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions 
     
-    ### You should store your notion integration token and database id in a seperate
-    ### .env file for example, do not expose directly. 
+    ### You should store your notion integration token and database id in a seperate .env file for example, do not expose directly. 
 
     `NOTION_KEY=notion_integration_token`
     `DATABASE_ID=notion_database_id` 
@@ -52,8 +51,7 @@ https://developers.notion.com/docs/working-with-databases
 https://ramnes.github.io/notion-sdk-py/reference/api_endpoints/ 
 
 
-## What are some future improvements you might make to this program or its code?
-## What were some of the product or technical choices you made and why?
+## What are some future improvements you might make to this program or its code? What were some of the product or technical choices you made and why?
 I would like to add unit tests for each method created to test multiple different edge cases/inputs.
 Right now none of the methods in any classes are being tested, meaning there is 
 a lack of code coverage and checking all branches' behaviors. 
