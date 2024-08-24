@@ -19,8 +19,8 @@ the notion API: https://github.com/ramnes/notion-sdk-py . The database
     https://developers.notion.com/docs/create-a-notion-integration#getting-started 
     https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions 
     
-    # You should store your notion integration token and database id in a seperate
-    # .env file for example, do not expose directly. 
+    ### You should store your notion integration token and database id in a seperate
+    ### .env file for example, do not expose directly. 
 
     NOTION_KEY=notion integration token
     DATABASE_ID= notion database id 
@@ -54,14 +54,15 @@ https://ramnes.github.io/notion-sdk-py/reference/api_endpoints/
 
 ## What are some future improvements you might make to this program or its code?
 ## What were some of the product or technical choices you made and why?
-Some improvements I'd like to make include adding classes such as a class for 
-handling page related methods, a class for database related methods, etc. This 
-would make the overall design/architecture cleaner. I would also like to add 
-unit tests for each method created to test multiple different edge cases/inputs.
-Right now the methods are all just in the same file as the main method, and it 
-seems messy and un organized.  
+I would like to add unit tests for each method created to test multiple different edge cases/inputs.
+Right now none of the methods in any classes are being tested, meaning there is 
+a lack of code coverage and checking all branches' behaviors. 
 
-Some technical choices I made include using a dictionary/hashmap for mapping 
+Some design decisions I made include making classes such as a class for 
+handling page related methods, a class for database related methods, etc. This 
+makes the overall design more modular, readable and re usable in other classes/code. 
+
+Another choice I made was using a dictionary/hashmap for mapping 
 a number to each list containing the sender name, message, and page id. 
 This allows for the user to select a number associated with the message they 
 want deleted, and the page id to be easily accessible in o(1) time (hashmap 
