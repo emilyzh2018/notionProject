@@ -22,8 +22,8 @@ the notion API: https://github.com/ramnes/notion-sdk-py . The database
     ### You should store your notion integration token and database id in a seperate
     ### .env file for example, do not expose directly. 
 
-    NOTION_KEY=notion integration token
-    DATABASE_ID= notion database id 
+    `NOTION_KEY=notion_integration_token`
+    `DATABASE_ID=notion_database_id` 
 
 3. run command `python3 notionProject.py` in terminal. 
     There are send, delete and read commands you can add after, for ex. `python3 notionProject.py send`. 
